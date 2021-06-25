@@ -1,4 +1,5 @@
 import React from "react";
+import NavLink from "./navLink";
 import { Link } from "gatsby";
 
 const NavBar = () => {
@@ -8,7 +9,7 @@ const NavBar = () => {
         <div className="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
           <Link
             to="/"
-            className="text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase text-white"
+            className="text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase text-black"
           >
             Aysan Isayo
           </Link>
@@ -29,32 +30,23 @@ const NavBar = () => {
             />
           </svg>
         </div>
-        <div id="example-navbar-danger">
+        <div id="navbar-links">
           <ul className="flex flex-col lg:flex-row list-none lg:ml-auto">
-            <li className="nav-item">
-              <Link
-                to="/about"
-                className="p-1 fab text-lg leading-lg text-white opacity-75"
-              >
-                <span className="ml-2">About</span>
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link
-                to="/projects"
-                className="p-1 fab text-lg leading-lg text-white opacity-75"
-              >
-                <span className="ml-2">Projects</span>
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link
-                to="/contact"
-                className="p-1 fab text-lg leading-lg text-white opacity-75"
-              >
-                <span className="ml-2">Contact</span>
-              </Link>
-            </li>
+          <NavLink 
+            url="/about"
+            style="p-1 fab text-lg leading-lg text-black opacity-75"
+            text="About"
+          />
+          <NavLink 
+            url="/projects"
+            style="p-1 fab text-lg leading-lg text-black opacity-75"
+            text="Projects"
+          />
+          <NavLink 
+            url="/contact"
+            style="p-1 fab text-lg leading-lg text-black opacity-75"
+            text="Contact"
+          />
           </ul>
         </div>
       </div>

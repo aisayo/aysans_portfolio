@@ -2,7 +2,6 @@ import React from "react";
 
 import NavBar from "./navbar";
 import Header from "./header";
-import "../assets/layout.css";
 
 const Layout = ({ children }) => {
   return (

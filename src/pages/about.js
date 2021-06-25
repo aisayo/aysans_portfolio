@@ -4,7 +4,9 @@ import Layout from "../components/layout";
 const About = () => {
   return (
     <Layout>
-      <p className="text-xl text-red-500">About page</p>
+      <header className="text-6xl">About Me</header>
+      
+      <p>I am a full-stack web developer</p>
     </Layout>
   );
 };
