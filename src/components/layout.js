@@ -2,7 +2,6 @@ import React from "react";
 
 import NavBar from "./navbar";
 import Header from "./header";
-import Footer from "./footer";
 
 const Layout = ({ children }) => {
   return (
@@ -11,7 +10,6 @@ const Layout = ({ children }) => {
         <NavBar />
       </Header>
       <main className="content">{children}</main>
-      <Footer/>
     </React.Fragment>
   );
 };
