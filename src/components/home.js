@@ -1,18 +1,20 @@
 import React from "react";
-import aboutImg from "../images/about_photo.jpeg";
 
 const Home = () => {
   return (
-    <div className="flex flex-wrap justify-center">
-      <div className="w-6/12 sm:w-4/12 px-4">
-      <h1>Aysan Isayo</h1>
-        <img
-          className="shadow-lg rounded max-w-full h-auto align-middle border-none"
-          src={aboutImg}
-        />
-        <h3>Full Stack Developer</h3>
+    <section
+      className="mt-0 min-h-screen p-32 text-center"
+      style={{
+        backgroundImage: `url("https://images.unsplash.com/photo-1444791252404-500e5b11f71b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80")`,
+        backgroundSize: "cover",
+      }}
+    >
+      <h1 className="font-bold text-5xl mb-6 mt-20">Aysan Isayo</h1>
+      <p className="mb-12">Full Stack Software Engineer</p>
+      <div className="mt-10">
+        <a href="#">down arrow</a>
       </div>
-    </div>
+    </section>
   );
 };
 

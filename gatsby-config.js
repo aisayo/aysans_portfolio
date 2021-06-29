@@ -8,6 +8,9 @@ module.exports = {
     options: {
         postCssPlugins: [require("tailwindcss")],
         },
-    }
+    },
+    `gatsby-plugin-image`,
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
   ],
 };
